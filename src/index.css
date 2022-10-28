@@ -1,0 +1,222 @@
+body{
+    background-image: url('../asset/background.jpg');
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    /* background-size: 100vw 100vh; */
+    font-family: 'JetBrains Mono', monospace;
+    margin: 0px 0px;
+    color: white;
+}
+
+div#container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+
+div#container div#main-info{
+    display: flex;
+    width: auto;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 1em 1em;
+    padding: 10px 10px;
+    border-radius: 10px 10px;
+}
+
+div#container div#main-info:hover, #wind:hover, #temp:hover, footer div:hover {
+    box-shadow: 0 10px 20px rgb(0 0 0 / 19%), 0 6px 6px rgb(0 0 0 / 23%);
+    backdrop-filter: blur(50px);
+    border: none;
+}
+
+div#container div#main-info div#weather {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    /* flex: 1 0 0%; */
+}
+
+#icon, #desc {
+    margin: 0.5em 0.5em;
+    display: flex;
+    
+    align-items: center;
+}
+#desc {
+    font-size: 2em;
+}
+
+#search {
+    background: none;
+    border: none;
+    border-bottom: 2px solid white;
+    margin: 0.4em 0.4em;
+    color: white;
+    font-size: 1.2em;
+    text-align: center;
+    
+}
+#search::placeholder {
+    color: white;
+}
+#submit:hover{
+    cursor: pointer;
+}
+
+ #city{
+    font-size: 5em;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+#main-info p{
+    font-size: 1.5rem;
+    margin: 0 0;
+}
+
+.border{
+    /* border: 1px solid white; */
+    border-radius: 10px 10px;
+}
+
+#other-info{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    width: 100%;
+    margin: 1em 1em;
+
+}
+#temp{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 30%;
+    text-align: center;
+}
+#main-temp{
+    border-bottom: 2px solid white;
+    border-radius: 0 0;
+}
+#min-max{
+    display: flex;
+    flex-direction: row;
+    font-size: 1em;
+    border-top: 2px solid white;
+}
+
+#min-temp, #max-temp {
+    width: 50%;
+    
+}
+#max-temp{
+    border-right: 2px solid white;
+    border-radius: 0 0;
+}
+#min-temp{
+    border-left: 2px solid white;
+    border-radius: 0 0;
+}
+#min-max p, #wind p {
+    font-size: 1.5em;
+}
+#wind{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    text-align: center;
+}
+
+
+#wind h2, #main-temp p{
+    font-size: 2em;
+
+}
+
+#submit {
+    background: none;
+    border: none;
+    color: white;
+}
+
+label#search-bar{
+    display: flex;
+}
+
+footer {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    height: auto;
+    width: 100%;
+    margin-top: 3em;
+}
+
+footer div {
+    flex: 0 1 50%;
+    height: auto;
+    padding: 1em 1em;
+}
+
+footer div a img {
+    margin: 1em 1em;
+}
+header {
+    display: flex;
+    position: sticky;
+}
+header div {
+    display: flex;
+    align-items: center;
+}
+header div span{
+    font-size: 2em;
+}
+
+@media screen and (max-width: 915px){
+    #temp, #wind{
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 772px) {
+    #other-info{
+        flex-direction: column;
+        align-items: center;
+    }
+    #temp, #wind {
+        width: 90%;
+        margin: 1em 1em;
+    }
+    div#container div#main-info{
+        word-wrap: break-word;
+        width: 90%;
+    }
+    div#container div#main-info:hover, #wind:hover, #temp:hover {
+        box-shadow: 0 10px 20px rgb(0 0 0 / 19%), 0 6px 6px rgb(0 0 0 / 23%);
+        backdrop-filter: blur(50px);
+        border: none;
+    }
+    footer div {
+        flex: 0 1 100%;
+        padding: 0.5em 0.5em;
+        font-size: 0.7em;
+    }
+    footer div a img {
+        margin: 1em 1em;
+        width: 30px;
+    }
+}
+
+@media screen and (max-width: 447px){
+    #temp, #wind {
+        width: 90%;
+    }
+    #city{
+        font-size: 340%;
+    }
+}

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="http://openweathermap.org/img/wn/02d@2x.png" type="image/x-icon" />
+
+
+    <title>Mausum</title>
+  </head>
+  <body>
+    <header>
+      <div>
+        <img src="http://openweathermap.org/img/wn/02d@2x.png" alt="">
+        <span><strong>मौसम</strong></span>
+      </div>
+    </header>
+    <div id="container">
+      <!------------------------ Main weather information--------------------------- -->
+      <div id="main-info">
+        <h1 id="city">
+            
+        </h1>
+        <p id="date-time"></p>
+        <div id="weather">
+          <img src="" alt="" id="icon"/>
+          <h2 id="desc"></h2>
+        </div>
+        <label for="" id="search-bar">
+          <input type="text" id="search" placeholder="Search City" />
+          <button id="submit"><i class='bx bx-search bx-md'></i>
+          </button>
+        </label>
+      </div>
+      <!------------------------ Other weather information--------------------------- -->
+
+      <div id="other-info" class="border">
+        <div id="temp" class="border">
+            <div id="main-temp" class="border">
+                <p>Temparature</p>
+                <p id="main-deg"></p> 
+            </div>
+            <div id="min-max">
+            <div id="max-temp" class="border">
+                <p>Max.</p>
+                <p id="max-deg"></p>
+            </div>
+            <div id="min-temp" class="border">
+                <p>Min.</p>
+                <p id="min-deg"></p>
+            </div>
+        </div>
+        </div>
+        <div id="wind" class="border">
+            <h2>Wind</h2>
+            <i class='bx bx-wind bx-fade-right bx-lg' ></i>
+            <p id="wind-info"></p>
+            
+        </div>
+      
+    </div>
+      <!------------------------ Footer--------------------------- -->
+
+    <footer>
+      <div>
+        <h1>Created By Dheeraj Jadhav</h1>
+        <h2>Contact Me</h2>
+        <a href="https://github.com/Dheeraj4103" target="_blank"
+          ><img src="1.png" alt=""
+        /></a>
+        <a href="https://devwithavatar.hashnode.dev/" target="_blank"
+          ><img src="2.png" alt=""
+        /></a>
+        <a
+          href="https://www.linkedin.com/in/dheeraj-jadhav-979a541a5/"
+          target="_blank"
+          ><img src="3.png" alt=""
+        /></a>
+        <a href="https://leetcode.com/dheeraj4103/" target="_blank"
+          ><img src="5.png" alt=""
+        /></a>
+        <a href="https://twitter.com/DJtweets56" target="_blank"
+          ><img src="7.png" alt=""
+        /></a>
+      </div>
+    </footer>
+    <script src="bundle.js"></script>
+  </body>
+</html>
