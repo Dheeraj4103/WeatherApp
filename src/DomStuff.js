@@ -1,5 +1,5 @@
 // url to get icon of required weather condition
-let icon_api = "http://openweathermap.org/img/wn/";
+let icon_api = "https://openweathermap.org/img/wn/";
 
 // function from where we will get required DOMs
 function Doms() {

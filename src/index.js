@@ -4,7 +4,7 @@ import { FillMain, FillOther } from "./DomStuff";
 // Default location
 let loc = "Pune";
 // weather api url
-let url = "http://api.openweathermap.org/data/2.5/weather?q=";
+let url = "https://api.openweathermap.org/data/2.5/weather?q=";
 // API key
 let api_id = "&APPID=5c2262fab86bee8d1567496a2aee2eb2&units=metric";
 
