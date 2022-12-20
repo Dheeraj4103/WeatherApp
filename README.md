@@ -8,7 +8,7 @@ This is a Weather App, made using HTML, CSS, JavaScript.
 
 Open this [link](https://dheeraj4103.github.io/WeatherApp/dist/index.html)
 
-![screenshot](https://twitter.com/DJtweets56/status/1586026353769402368/photo/1)
+![screenshot](https://project-assets.showwcase.com/500x/21721/1671522351652-screenshot.jpg?type=webp)
 
 Share you feed back on,
 
